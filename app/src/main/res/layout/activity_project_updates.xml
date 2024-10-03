@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".resources.ProjectUpdates">
+
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/project_updates_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Project Updates"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:paddingBottom="8dp"/>
+
+        <!-- Subtitle -->
+        <TextView
+            android:id="@+id/project_updates_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Every month, Wren publishes new updates from the Climate Portfolio, highlighting notable progress."
+            android:textSize="16sp"
+            android:paddingBottom="16dp"/>
+
+        <!-- Project Updates List -->
+       <androidx.recyclerview.widget.RecyclerView
+           android:id="@+id/updatesRecyclerView"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/footer_about"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <!-- Main content -->
+                <TextView
+                    android:id="@+id/mainContent"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_margin="16dp"
+                    android:text="Hello World!"
+                    app:layout_constraintBottom_toTopOf="@id/footer"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <!-- Footer -->
+                <LinearLayout
+                    android:id="@+id/footer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_vertical"
+                    android:background="#072F10"
+                    app:layout_constraintBottom_toBottomOf="parent">
+
+                    <TextView
+                        android:id="@+id/footerText1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Portfolios"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"/>
+
+                    <TextView
+                        android:id="@+id/footerText2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="🌍 Classic Portfolio"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="8dp"
+                        android:autoLink="web" />
+
+                    <TextView
+                        android:id="@+id/footerText3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="🌅 Carbon Removal Portfolio"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="8dp"
+                        android:autoLink="web" />
+
+                    <TextView
+                        android:id="@+id/footerText4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="🏛️ Tax-deductible Portfolio"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="8dp"
+                        android:autoLink="web" />
+                    <!-- autoLink attribute for clickable links -->
+
+                    <!-- Horizontal line -->
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@android:color/darker_gray"
+                        android:layout_marginTop="8dp"/>
+
+                    <TextView
+                        android:id="@+id/footerText5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="View All Projects"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="25dp"
+                        android:autoLink="web" />
+
+                    <TextView
+                        android:id="@+id/footerText6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Resources"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:layout_marginStart="16dp" />
+
+                    <TextView
+                        android:id="@+id/footerText7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Follow on Twitter"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:autoLink="web" />
+                    <TextView
+                        android:id="@+id/footerText8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Follow on Instagram"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:autoLink="web" />
+                    <TextView
+                        android:id="@+id/footerText9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Support"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:autoLink="web" />
+                    <TextView
+                        android:id="@+id/footerText10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Contact us"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:autoLink="web" />
+                    <TextView
+                        android:id="@+id/footerText11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Product roadmap"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:autoLink="web" />
+                    <TextView
+                        android:id="@+id/footerText12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Affiliate program"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="25dp"
+
+                        android:autoLink="web" />
+
+                    <TextView
+                        android:id="@+id/footerText13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Explore"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:layout_marginStart="16dp" />
+
+                    <TextView
+                        android:id="@+id/footerText14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="How it works"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:autoLink="web" />
+
+                    <TextView
+                        android:id="@+id/footerText15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="About us"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:autoLink="web" />
+
+                    <TextView
+                        android:id="@+id/footerText16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Blog"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:autoLink="web" />
+
+                    <TextView
+                        android:id="@+id/footerText17"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Offset flights"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:autoLink="web" />
+
+                    <TextView
+                        android:id="@+id/footerText18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Offset anything"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:autoLink="web" />
+
+                    <TextView
+                        android:id="@+id/footerText19"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Gifts"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:autoLink="web" />
+
+                    <TextView
+                        android:id="@+id/footerText20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="API"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:autoLink="web" />
+                    <TextView
+                        android:id="@+id/footerText21"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Receipts ledger"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:autoLink="web" />
+                    <TextView
+                        android:id="@+id/footerText22"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Copak for Bussiness"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:autoLink="web" />
+                    <TextView
+                        android:id="@+id/footerText23"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Leaderboard"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:autoLink="web" />
+                    <TextView
+                        android:id="@+id/footerText24"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="FAQ"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginBottom="25dp"
+                        android:layout_marginTop="8dp"
+
+                        android:autoLink="web" />
+                    <TextView
+                        android:id="@+id/footerText25"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="COPAK"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:layout_marginStart="16dp" />
+
+                    <TextView
+                        android:id="@+id/footerText26"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Take real, effective climate action with Wren's all-in-one climate platform."
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp"
+                        android:layout_marginStart="16dp"
+                        android:maxLines="3"
+                        android:gravity="start"
+                        android:layout_gravity="start"
+                        android:layoutDirection="ltr" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="18dp">
+
+                        <ImageView
+                            android:id="@+id/twitterLogo"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/twitter"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:onClick="onTwitterClick"
+                            android:layout_marginEnd="16dp" />
+
+                        <ImageView
+                            android:id="@+id/instagramLogo"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/instagram"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:onClick="onInstagramClick"
+                            android:layout_marginEnd="16dp" />
+
+                        <ImageView
+                            android:id="@+id/youtubeLogo"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/youtube"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:onClick="onYoutubeClick"/>
+
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/footerText27"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Copack Climate, PBC © 2024"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginTop="8dp"
+
+                        android:autoLink="web" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@android:color/darker_gray"
+                        android:layout_marginTop="8dp"/>
+                    <TextView
+                        android:id="@+id/footerText28"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Contact support"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:autoLink="web" />
+                    <TextView
+                        android:id="@+id/footerText29"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Privay Policy"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp"
+                        android:layout_marginStart="16dp"
+
+                        android:autoLink="web" />
+                    <TextView
+                        android:id="@+id/footerText30"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Data Collection"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginBottom="25dp"
+
+                        android:autoLink="web" />
+
+
+                    <!-- Add more views as needed -->
+
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+</ScrollView>

@@ -1,0 +1,1172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".products.OffsetAnything">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="@android:color/white">
+
+            <!-- Logo ImageView -->
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/classiciconsquare"
+                android:layout_gravity="center"
+                />
+
+            <!-- Title TextView -->
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The easiest way to offset your carbon."
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="16dp"
+                android:layout_gravity="center"
+                android:textAlignment="center" />
+
+            <!-- Amount Input Layout -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp"
+                android:gravity="center_vertical">
+
+                <!-- Amount EditText -->
+                <EditText
+                    android:id="@+id/amount_input"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="0"
+
+                    android:inputType="numberDecimal"
+                    android:textAlignment="center"
+                   android:background="@drawable/edit_text_border"
+                    android:textSize="18sp"
+                    android:padding="16dp"
+                    android:textColor="@android:color/black"/>
+
+                <!-- Unit Selector (USD/CO2) -->
+                <Button
+                    android:id="@+id/unit_selector"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CO2"
+                    android:textColor="@android:color/black"
+                    android:backgroundTint="@android:color/darker_gray"
+                    android:layout_marginStart="8dp"/>
+            </LinearLayout>
+
+            <!-- Description TextView -->
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1 ton is like 551 burgers eaten."
+                android:textSize="14sp"
+                android:textColor="@android:color/darker_gray"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp" />
+
+            <!-- Optional Note EditText -->
+            <EditText
+                android:id="@+id/note_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Leave an optional note"
+                android:background="@drawable/edit_text_border"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="16dp"
+                android:padding="16dp"
+                android:textSize="16sp" />
+
+            <!-- Offset Button -->
+            <Button
+                android:id="@+id/offset_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Offset 1 ton of CO₂ ($25.00)"
+                android:textColor="@android:color/white"
+                android:backgroundTint="@color/green"
+                android:layout_marginTop="16dp"
+                android:padding="12dp"
+                android:textSize="16sp"/>
+
+            <!-- Support Info -->
+            <LinearLayout
+                android:id="@+id/support_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp"
+                android:gravity="center_vertical"
+                android:background="@color/green"
+                android:padding="8dp">
+
+                <!-- Support Icon -->
+                <ImageView
+                    android:id="@+id/support_icon"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/classiciconsquare"
+                    />
+
+                <!-- Support Text -->
+                <TextView
+                    android:id="@+id/support_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="COPAK Classic Portfolio"
+                    android:textColor="@android:color/black"
+                    android:layout_marginStart="8dp"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/t_price_infoo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=" • $25.00 / ton"
+                    android:textColor="@color/white"
+                    android:layout_marginStart="4dp"
+                    android:textSize="14sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/trailblazer_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp"
+                android:gravity="center_vertical"
+                android:background="@color/yellow"
+                android:padding="8dp">
+
+                <!-- Support Icon -->
+                <ImageView
+                    android:id="@+id/t_support_icon"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/trailblazer"
+                    />
+
+                <!-- Support Text -->
+                <TextView
+                    android:id="@+id/t_support_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Trailblazer"
+                    android:textColor="@android:color/black"
+                    android:layout_marginStart="8dp"
+                    android:textSize="16sp"/>
+
+
+
+                <!-- Price Info -->
+                <TextView
+                    android:id="@+id/t_price_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" • $400.00 / ton"
+                    android:textColor="@color/white"
+                    android:layout_marginStart="4dp"
+                    android:textSize="14sp"/>
+
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="@android:color/white">
+
+            <!-- Title TextView -->
+            <TextView
+                android:id="@+id/title_common_purchases"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Common purchases"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Item 1: Road Trip -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingVertical="8dp">
+
+                <!-- Icon -->
+                <ImageView
+                    android:id="@+id/icon_road_trip"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/plane"
+
+                    android:layout_marginEnd="16dp"/>
+
+                <!-- Description -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/road_trip_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Road trip (500 miles)"
+                        android:textSize="16sp"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/road_trip_co2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0.5 tons of CO₂"
+                        android:textSize="14sp"
+                        android:textColor="@android:color/darker_gray" />
+                </LinearLayout>
+
+                <!-- Select Button -->
+                <Button
+                    android:id="@+id/select_road_trip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Select"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:backgroundTint="@android:color/transparent"/>
+            </LinearLayout>
+
+            <!-- Divider -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"/>
+
+            <!-- Item 2: Christmas Party -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingVertical="8dp">
+
+                <!-- Icon -->
+                <ImageView
+                    android:id="@+id/icon_christmas_party"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/classiciconsquare"
+
+                    android:layout_marginEnd="16dp"/>
+
+                <!-- Description -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/christmas_party_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Christmas party"
+                        android:textSize="16sp"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/christmas_party_co2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0.08 tons of CO₂"
+                        android:textSize="14sp"
+                        android:textColor="@android:color/darker_gray" />
+                </LinearLayout>
+
+                <!-- Select Button -->
+                <Button
+                    android:id="@+id/select_christmas_party"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Select"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:backgroundTint="@android:color/transparent"/>
+
+            </LinearLayout>
+
+            <!-- Divider -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"/>
+
+            <!-- Item 3: Domestic Flight -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingVertical="8dp">
+
+                <!-- Icon -->
+                <ImageView
+                    android:id="@+id/icon_domestic_flight"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/baseline_airplanemode_active_24"
+
+                    android:layout_marginEnd="16dp"/>
+
+                <!-- Description -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/domestic_flight_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Domestic flight"
+                        android:textSize="16sp"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/domestic_flight_co2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1 ton of CO₂"
+                        android:textSize="14sp"
+                        android:textColor="@android:color/darker_gray" />
+                </LinearLayout>
+
+                <!-- Select Button -->
+                <Button
+                    android:id="@+id/select_domestic_flight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Select"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:backgroundTint="@android:color/transparent"/>
+            </LinearLayout>
+
+            <!-- Divider -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"/>
+
+            <!-- Item 4: Steak Dinner -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingVertical="8dp">
+
+                <!-- Icon -->
+                <ImageView
+                    android:id="@+id/icon_steak_dinner"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/baseline_dining_24"
+
+                    android:layout_marginEnd="16dp"/>
+
+                <!-- Description -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/steak_dinner_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Steak dinner"
+                        android:textSize="16sp"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/steak_dinner_co2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0.005 tons of CO₂"
+                        android:textSize="14sp"
+                        android:textColor="@android:color/darker_gray" />
+                </LinearLayout>
+
+                <!-- Select Button -->
+                <Button
+                    android:id="@+id/select_steak_dinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Select"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:backgroundTint="@android:color/transparent"/>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="@android:color/white">
+
+            <!-- Icon Row -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="8dp">
+
+                <!-- Icons (Replace with your icons) -->
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/classiciconsquare"
+                    android:layout_marginHorizontal="8dp" />
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/classiciconsquare"
+                    android:layout_marginHorizontal="8dp" />
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/classiciconsquare"
+                    android:layout_marginHorizontal="8dp" />
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/classiciconsquare"
+                    android:layout_marginHorizontal="8dp" />
+            </LinearLayout>
+
+            <!-- Title TextView -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Offset your carbon footprint by funding world-class climate solutions."
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:layout_marginBottom="8dp"
+                android:textAlignment="center"/>
+
+            <!-- Subtitle TextView -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="What we're funding:"
+                android:textSize="20sp"
+                android:textColor="@android:color/holo_green_dark"
+                android:gravity="center"
+                android:layout_marginBottom="16dp"
+                android:textAlignment="center"/>
+
+            <!-- CardView containing an ImageView and Texts -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!-- Image inside the Card -->
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/growing_mangroves"
+                        />
+
+                    <!-- Description Area -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <!-- Title of the project -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Mangrove conservation in Mexico"
+                            android:textSize="18sp"
+                            android:textColor="@android:color/black"
+                            android:layout_marginBottom="8dp"/>
+
+                        <!-- Description Text -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Protect the mangrove forests of Baja California Sur, Mexico by scaling-up conservation efforts."
+                            android:textSize="16sp"
+                            android:textColor="@android:color/darker_gray"/>
+
+                        <!-- More link -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="More →"
+                            android:textSize="16sp"
+                            android:textColor="@android:color/holo_blue_dark"
+                            android:layout_marginTop="8dp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="4dp"
+                android:src="@drawable/circle_question_mark" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Frequently Asked Questions"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="16dp"
+                android:gravity="center_horizontal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:src="@drawable/baseline_add_24" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="How does COPAK's business model work?"
+                    android:textSize="18sp" />
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:src="@drawable/baseline_add_24"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="What happens once I subscribe?"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:src="@drawable/baseline_add_24" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="How much does it cost to offset my carbon footprint?"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:src="@drawable/baseline_add_24" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="What else can I do to help end the climate crisis?"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:src="@drawable/wren_bird"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="32dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="We all have a part to play. Take climate action today."
+                android:layout_marginTop="16dp"
+                android:gravity="center_horizontal"
+                android:layout_marginBottom="16dp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Get started"
+                android:layout_gravity="center_horizontal"
+                android:backgroundTint="@color/yellow"/>
+
+        </LinearLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            xmlns:app="http://schemas.android.com/apk/res-auto">
+            <!-- Main content -->
+            <TextView
+                android:id="@+id/mainContent"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_margin="16dp"
+                android:text="Hello World!"
+                app:layout_constraintBottom_toTopOf="@id/footer"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!-- Footer -->
+            <LinearLayout
+                android:id="@+id/footer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                android:background="#072F10"
+                app:layout_constraintBottom_toBottomOf="parent">
+
+                <TextView
+                    android:id="@+id/footerText1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Portfolios"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"/>
+
+                <TextView
+                    android:id="@+id/footerText2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🌍 Classic Portfolio"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="8dp"
+                    android:autoLink="web" />
+
+                <TextView
+                    android:id="@+id/footerText3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🌅 Carbon Removal Portfolio"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="8dp"
+                    android:autoLink="web" />
+
+                <TextView
+                    android:id="@+id/footerText4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🏛️ Tax-deductible Portfolio"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="8dp"
+                    android:autoLink="web" />
+                <!-- autoLink attribute for clickable links -->
+
+                <!-- Horizontal line -->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@android:color/darker_gray"
+                    android:layout_marginTop="8dp"/>
+
+                <TextView
+                    android:id="@+id/footerText5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="View All Projects"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="25dp"
+                    android:autoLink="web" />
+
+                <TextView
+                    android:id="@+id/footerText6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Resources"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="16dp" />
+
+                <TextView
+                    android:id="@+id/footerText7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Follow on Twitter"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:autoLink="web" />
+                <TextView
+                    android:id="@+id/footerText8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Follow on Instagram"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:autoLink="web" />
+                <TextView
+                    android:id="@+id/footerText9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Support"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:autoLink="web" />
+                <TextView
+                    android:id="@+id/footerText10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Contact us"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:autoLink="web" />
+                <TextView
+                    android:id="@+id/footerText11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Product roadmap"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:autoLink="web" />
+                <TextView
+                    android:id="@+id/footerText12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Affiliate program"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="25dp"
+
+                    android:autoLink="web" />
+
+                <TextView
+                    android:id="@+id/footerText13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Explore"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="16dp" />
+
+                <TextView
+                    android:id="@+id/footerText14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="How it works"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:autoLink="web" />
+
+                <TextView
+                    android:id="@+id/footerText15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="About us"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:autoLink="web" />
+
+                <TextView
+                    android:id="@+id/footerText16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Blog"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:autoLink="web" />
+
+                <TextView
+                    android:id="@+id/footerText17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Offset flights"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:autoLink="web" />
+
+                <TextView
+                    android:id="@+id/footerText18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Offset anything"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:autoLink="web" />
+
+                <TextView
+                    android:id="@+id/footerText19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gifts"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:autoLink="web" />
+
+                <TextView
+                    android:id="@+id/footerText20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="API"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:autoLink="web" />
+                <TextView
+                    android:id="@+id/footerText21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Receipts ledger"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:autoLink="web" />
+                <TextView
+                    android:id="@+id/footerText22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Copak for Bussiness"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:autoLink="web" />
+                <TextView
+                    android:id="@+id/footerText23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Leaderboard"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:autoLink="web" />
+                <TextView
+                    android:id="@+id/footerText24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="FAQ"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginBottom="25dp"
+                    android:layout_marginTop="8dp"
+
+                    android:autoLink="web" />
+                <TextView
+                    android:id="@+id/footerText25"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="COPAK"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="16dp" />
+
+                <TextView
+                    android:id="@+id/footerText26"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Take real, effective climate action with COPAK's all-in-one climate platform."
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:layout_marginStart="16dp"
+                    android:maxLines="3"
+                    android:gravity="start"
+                    android:layout_gravity="start"
+                    android:layoutDirection="ltr" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="18dp">
+
+                    <ImageView
+                        android:id="@+id/twitterLogo"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/twitter"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:onClick="onTwitterClick"
+                        android:layout_marginEnd="16dp" />
+
+                    <ImageView
+                        android:id="@+id/instagramLogo"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/instagram"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:onClick="onInstagramClick"
+                        android:layout_marginEnd="16dp" />
+
+                    <ImageView
+                        android:id="@+id/youtubeLogo"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/youtube"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:onClick="onYoutubeClick"/>
+
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/footerText27"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Copack Climate, PBC © 2024"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="8dp"
+
+                    android:autoLink="web" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@android:color/darker_gray"
+                    android:layout_marginTop="8dp"/>
+                <TextView
+                    android:id="@+id/footerText28"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Contact support"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:autoLink="web" />
+                <TextView
+                    android:id="@+id/footerText29"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Privay Policy"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:layout_marginStart="16dp"
+
+                    android:autoLink="web" />
+                <TextView
+                    android:id="@+id/footerText30"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Data Collection"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginBottom="25dp"
+
+                    android:autoLink="web" />
+
+
+                <!-- Add more views as needed -->
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>

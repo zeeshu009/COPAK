@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screens.ProfileFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        android:background="#f5f5f5"
+        android:padding="12dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Welcome back!"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:textColor="#333"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="16dp"/>
+
+            <!-- Profile Picture -->
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profile_image"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/zeeshan"
+                app:civ_border_width="4dp"
+                app:civ_border_color="#FF3B3B58"/>
+
+            <!-- Name -->
+            <TextView
+                android:id="@+id/profile_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Zeeshan"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:textColor="#333"
+                android:layout_marginTop="16dp"/>
+
+            <TextView
+                android:id="@+id/profile_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="muhammadzeeshu@gmail.com"
+                android:textSize="20sp"
+                android:textColor="#333"
+                android:layout_marginTop="16dp"/>
+
+            <!-- Bio -->
+            <TextView
+                android:id="@+id/profile_bio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Environmental advocate, passionate about reducing carbon footprints."
+                android:textSize="16sp"
+                android:textColor="#666"
+                android:gravity="center"
+                android:layout_marginTop="8dp"
+                android:padding="12dp"/>
+
+
+            <Button
+                android:id="@+id/logout_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Log Out"
+                android:backgroundTint="#F44336"
+                android:textColor="#fff"
+                android:textAllCaps="false"
+                android:layout_marginTop="16dp"/>
+
+            <Button
+                android:id="@+id/carbon_calculator_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Go to Carbon Calculator"
+                android:backgroundTint="#4CAF50"
+                android:textColor="#fff"
+                android:textAllCaps="false"
+                android:layout_marginTop="13dp"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="My subscription plans"
+                android:textSize="20sp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="#333"
+                android:layout_marginTop="8dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/plans_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+
+
+</FrameLayout>

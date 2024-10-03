@@ -1,0 +1,839 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".resources.Offsets">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center_horizontal">
+
+        <!-- Heading Text -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="The Problems and Promise of Climate Offsets."
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:fontFamily="sans-serif"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Subheading Text -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="But we can fix it."
+            android:textSize="20sp"
+            android:textStyle="italic"
+            android:fontFamily="sans-serif"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Image -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/beforeafter"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Additional Text or Buttons -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="We built Wren to be your on-ramp to climate action."
+            android:textSize="16sp"
+            android:fontFamily="sans-serif"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="16dp"/>
+
+
+        <TextView
+            android:id="@+id/carbonOffsetsTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Something is rotten in the state of the carbon offsets industry. Big oil companies use offsets to greenwash their brand image, so-called carbon offset projects have burned to the ground, and experts estimate that up to 85% of carbon offset projects don’t have the impact they promise.\n\nAt their best, carbon offsets are a transformative funding mechanism, enabling anyone to send money around the world to the highest impact climate solutions. But most projects don’t live up to their potential: either they’re used to greenwash dirty business practices, or they don’t have the impact they promise.\n\nWren’s main business is helping individuals support high impact climate solutions, and carbon offsets are the mechanism we use to fund these projects. This post will lay out the biggest problems we see in the carbon offset industry, and the unique process we use to ensure our members’ are having as much positive impact as possible."
+            android:textSize="16sp"
+            android:lineSpacingExtra="4dp"
+            android:padding="8dp"
+            android:gravity="start" />
+
+        <ImageView
+            android:id="@+id/sampleImageView"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/burningtree"
+            android:layout_gravity="center"
+            android:scaleType="centerInside"
+            android:adjustViewBounds="true" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Carbon offsets fail in two main ways"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:fontFamily="sans-serif"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="8dp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Carbon offsets greenwash dirty business practices"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="start"
+            android:fontFamily="sans-serif"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/carbonOffsetsExplanationTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Big companies whose entire business models are predicated on pumping greenhouse gases into the atmosphere use carbon offsets to hide their true environmental impact from consumers. This is a growing form of greenwashing, and it’s the latest chapter in a long history of dirty businesses misleading consumers.\n\nGreenwashing is like the modern-day equivalent of cigarette companies claiming smoking is good for you. We eventually saw past the lies from tobacco companies and we need to decouple ourselves from dirty fossil fuels as soon as possible.\n\nAlthough it is great for any company to fund climate solutions, fossil fuel companies and other big emitters should not be let off the hook just for buying carbon offsets. To end the climate crisis, every oil and gas company will either have to shut down or completely transform their business. Carbon offsets are not a viable longterm solution for these companies to keep polluting."
+            android:textSize="16sp"
+            android:lineSpacingExtra="4dp"
+            android:padding="8dp"
+            android:gravity="start" />
+
+
+
+        <TextView
+            android:id="@+id/successfulOffsetsTextView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fossil fuel companies and big emitters should not be let off the hook just for buying carbon offsets."
+            android:textSize="20sp"
+            android:textColor="#004d00"
+            android:background="#ccffcc"
+            android:padding="16dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:lineSpacingExtra="4dp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Carbon offsets don’t have the impact they promise"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:fontFamily="sans-serif"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/offsetProjectsChallengesTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Wildfires immolate offset projects in Oregon, California, and around the globe. Massive Chinese hydroelectricity projects sell carbon offsets solely to generate profits for investors. Experts estimate that up to 85% of carbon offset projects don’t have the impact they promise.\n\nOne challenge in the industry is that there are dozens of different kinds of projects that differ by geography, technology, size, and their own operating practices. Each set of opaque operating practices hides many different kinds of fraud. The whole industry is plagued by a lack of transparency—without seeing the inner workings of carbon offset projects, it is hard to tell the bad from the good."
+            android:textSize="16sp"
+            android:lineSpacingExtra="4dp"
+            android:padding="8dp"
+            android:gravity="start" />
+
+        <ImageView
+            android:id="@+id/sampleImageVie2"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/sparklingsapling"
+            android:layout_gravity="center"
+            android:scaleType="centerInside"
+            android:adjustViewBounds="true" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="But carbon offsets provide necessary funding to end the climate crisis."
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:fontFamily="sans-serif"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="8dp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray" />
+
+        <TextView
+            android:id="@+id/climateCrisisSolutionsTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="To end the climate crisis, we need to rapidly decarbonise our energy grid and heavy industry, protect vital ecosystems that naturally sequester CO₂, change our food systems, and remove the greenhouse gases we pumped into the atmosphere by burning fossil fuels for the past 200 years.\n\nThere’s a lot to do, and we need to do it as quickly as we can to avoid overheating. For many climate solutions, like electric cars or renewable energy, there’s a clear path to profitability. Electric car manufacturers are selling more cars every year, and renewables have become the cheapest source of electricity in many areas.\n\nBut many solutions to the climate crisis don’t have a clear path to profitability. Key solutions ranging from ecosystem conservation to landfill methane management to refrigerant recycling are underfunded despite being able to reduce emissions by billions of tons of CO₂ each year. Carbon offsets provide a key funding source for these solutions that currently struggle to find financing."
+            android:textSize="16sp"
+            android:lineSpacingExtra="4dp"
+            android:padding="8dp"
+            android:gravity="start" />
+        <TextView
+            android:id="@+id/successfulOffsetsTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="The projects on CoPak serve as examples of what carbon offsets can be if done successfully."
+            android:textSize="20sp"
+            android:textColor="#004d00"
+            android:background="#ccffcc"
+            android:padding="16dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:lineSpacingExtra="4dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="The projects we support on Wren serve as examples of what carbon offsets can be if done successfully. Some projects protect millions of acres of Amazon rainforest, or empower hundreds of thousands of subsistence farmers to plant trees and provide for their families, or kickstart cutting-edge carbon removal technologies that permanently turn atmospheric CO₂ into solid rock. At Wren it’s our job to find and fund the good projects, and avoid the many bad ones."
+            android:textSize="16sp"
+            android:lineSpacingExtra="4dp"
+            android:padding="8dp"
+            android:gravity="start" />
+
+
+        <ImageView
+            android:id="@+id/sampleImageView3"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/tistfarmer"
+            android:layout_margin="10sp"
+            android:layout_gravity="center"
+            android:scaleType="centerInside"
+            android:adjustViewBounds="true" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Good carbon offset projects exist. Wren has raised millions to fund them!"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:fontFamily="sans-serif"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="8dp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray" />
+
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="When we started Wren, we realized quickly that transparency would be key for finding the good projects in a sea of bad ones. We need to understand the science and financing behind a project at a deep level before committing to fund it. And we need to receive regular updates on the inner workings of every project we fund, to make sure that our members’ money is really making a difference.
+
+\nIn an opaque industry, transparency is a radical demand. Many carbon offset projects are uncomfortable with it. Prospective partners are often surprised when we ask detailed questions about their finances. And their surprise turns to shock when we tell them we expect frequent updates with pictures, videos, and data to prove that their offsets are truly making an impact."
+            android:textSize="16sp"
+            android:lineSpacingExtra="4dp"
+            android:padding="8dp"
+            android:gravity="start" />
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Prospective partners are often surprised when we ask detailed questions about their finances."
+            android:textSize="20sp"
+            android:textColor="#004d00"
+            android:background="#ccffcc"
+            android:padding="16dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:lineSpacingExtra="4dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="But the best partners are refreshed by our approach. They share all the details with us, let us meet with their team, and even create video updates for our members. By shining a light on these exceptional carbon offset projects, we can avoid the darkness in the industry, sending money to where it matters most.\n
+
+It takes a lot of work to be this transparent. But it’s worth it: The transparency we have with our partners is the only way we can guarantee our members’ impact. If a partner cannot be transparent with us, then we cannot work with them.\n
+
+To maintain transparency and ensure we’re working with the right partners, Wren has a rigorous research process. Here’s how it works:"
+            android:textSize="16sp"
+            android:lineSpacingExtra="4dp"
+            android:padding="8dp"
+            android:gravity="start" />
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="16dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/preSelection"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1. Pre-selection\nWe regularly speak to experts across the industry—from conservation to carbon removal—to understand which projects are most promising."
+                    android:textSize="16sp"
+                    android:padding="8dp"
+                    android:gravity="start" />
+
+                <TextView
+                    android:id="@+id/projectAnalysis"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="2. Project analysis\nWe pore over everything we can get our hands on, from maps of the location, to plans for how measurement will be conducted, to relevant scientific literature."
+                    android:textSize="16sp"
+                    android:padding="8dp"
+                    android:gravity="start" />
+
+                <TextView
+                    android:id="@+id/rigorousScreening"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="3. Rigorous screening\nWe assess the project across several criteria, including additionality, risk of reversal, measurement accuracy, community impact, and cost per ton of CO2."
+                    android:textSize="16sp"
+                    android:padding="8dp"
+                    android:gravity="start" />
+
+                <TextView
+                    android:id="@+id/teamInterviews"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="4. Team interviews\nWe request financials and other sensitive documents for review, and evaluate the ethos of the team behind the project."
+                    android:textSize="16sp"
+                    android:padding="8dp"
+                    android:gravity="start" />
+
+                <TextView
+                    android:id="@+id/dueDiligence"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="5. Due-diligence\nWe speak with industry experts outside the company to get an additional opinion on our analysis and preliminary recommendation."
+                    android:textSize="16sp"
+                    android:padding="8dp"
+                    android:gravity="start" />
+
+                <TextView
+                    android:id="@+id/ongoingReview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="∞. Ongoing review\nWe constantly evaluate the effectiveness of every project, tracking progress and judging if the project is still a highly impactful destination for further funding."
+                    android:textSize="16sp"
+                    android:padding="8dp"
+                    android:gravity="start" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <ImageView
+            android:id="@+id/sampleImageView4"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/signpost1"
+            android:layout_margin="10sp"
+            android:layout_gravity="center"
+            android:scaleType="centerInside"
+            android:adjustViewBounds="true" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="So, what’s next?"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:fontFamily="sans-serif"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="8dp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray" />
+
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="We started Wren with the belief that carbon offsets can be a transformative funding mechanism in the climate crisis—as long as we only send money to the very best projects."
+            android:textSize="16sp"
+            android:lineSpacingExtra="4dp"
+            android:padding="8dp"
+            android:gravity="start" />
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Projects on Wren kickstart cutting edge climate solutions, lift thousands of African families out of poverty, and help indigenous Amazonians protect their rainforest home."
+            android:textSize="20sp"
+            android:textColor="#004d00"
+            android:background="#ccffcc"
+            android:padding="16dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:lineSpacingExtra="4dp" />
+
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="We know carbon offsets won’t solve the climate crisis on their own—they must be coupled with ambitious climate policy, rapid technological progress, and large-scale action from millions of people.\n That’s why Wren also funds high impact policy groups, and helps individuals learn what they can do to help drive systemic change.
+
+Climate change is the crisis of our generation—but we have all the solutions we need to stop it. By funding climate solutions, pushing for change, and living more sustainably we can all play our part in healing the planet."
+            android:textSize="16sp"
+            android:lineSpacingExtra="4dp"
+            android:padding="8dp"
+            android:gravity="start" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:text="😞 😐 😊 🤩"
+            android:layout_margin="15dp"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto">
+            <!-- Main content -->
+            <TextView
+                android:id="@+id/mainContent"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_margin="16dp"
+                android:text="Hello World!"
+                app:layout_constraintBottom_toTopOf="@id/footer"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!-- Footer -->
+            <LinearLayout
+                android:id="@+id/footer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                android:background="#072F10"
+                app:layout_constraintBottom_toBottomOf="parent">
+
+                <TextView
+                    android:id="@+id/footerText1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Portfolios"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"/>
+
+                <TextView
+                    android:id="@+id/footerText2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🌍 Classic Portfolio"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="8dp"
+                    android:autoLink="web" />
+
+                <TextView
+                    android:id="@+id/footerText3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🌅 Carbon Removal Portfolio"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="8dp"
+                    android:autoLink="web" />
+
+                <TextView
+                    android:id="@+id/footerText4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🏛️ Tax-deductible Portfolio"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="8dp"
+                    android:autoLink="web" />
+                <!-- autoLink attribute for clickable links -->
+
+                <!-- Horizontal line -->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@android:color/darker_gray"
+                    android:layout_marginTop="8dp"/>
+
+                <TextView
+                    android:id="@+id/footerText5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="View All Projects"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="25dp"
+                    android:autoLink="web" />
+
+                <TextView
+                    android:id="@+id/footerText6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Resources"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="16dp" />
+
+                <TextView
+                    android:id="@+id/footerText7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Follow on Twitter"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:autoLink="web" />
+                <TextView
+                    android:id="@+id/footerText8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Follow on Instagram"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:autoLink="web" />
+                <TextView
+                    android:id="@+id/footerText9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Support"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:autoLink="web" />
+                <TextView
+                    android:id="@+id/footerText10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Contact us"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:autoLink="web" />
+                <TextView
+                    android:id="@+id/footerText11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Product roadmap"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:autoLink="web" />
+                <TextView
+                    android:id="@+id/footerText12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Affiliate program"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="25dp"
+
+                    android:autoLink="web" />
+
+                <TextView
+                    android:id="@+id/footerText13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Explore"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="16dp" />
+
+                <TextView
+                    android:id="@+id/footerText14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="How it works"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:autoLink="web" />
+
+                <TextView
+                    android:id="@+id/footerText15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="About us"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:autoLink="web" />
+
+                <TextView
+                    android:id="@+id/footerText16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Blog"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:autoLink="web" />
+
+                <TextView
+                    android:id="@+id/footerText17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Offset flights"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:autoLink="web" />
+
+                <TextView
+                    android:id="@+id/footerText18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Offset anything"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:autoLink="web" />
+
+                <TextView
+                    android:id="@+id/footerText19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gifts"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:autoLink="web" />
+
+                <TextView
+                    android:id="@+id/footerText20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="API"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:autoLink="web" />
+                <TextView
+                    android:id="@+id/footerText21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Receipts ledger"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:autoLink="web" />
+                <TextView
+                    android:id="@+id/footerText22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Copak for Bussiness"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:autoLink="web" />
+                <TextView
+                    android:id="@+id/footerText23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Leaderboard"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:autoLink="web" />
+                <TextView
+                    android:id="@+id/footerText24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="FAQ"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginBottom="25dp"
+                    android:layout_marginTop="8dp"
+
+                    android:autoLink="web" />
+                <TextView
+                    android:id="@+id/footerText25"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="COPAK"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="16dp" />
+
+                <TextView
+                    android:id="@+id/footerText26"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Take real, effective climate action with Wren's all-in-one climate platform."
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:layout_marginStart="16dp"
+                    android:maxLines="3"
+                    android:gravity="start"
+                    android:layout_gravity="start"
+                    android:layoutDirection="ltr" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="18dp">
+
+                    <ImageView
+                        android:id="@+id/twitterLogo"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/twitter"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:onClick="onTwitterClick"
+                        android:layout_marginEnd="16dp" />
+
+                    <ImageView
+                        android:id="@+id/instagramLogo"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/instagram"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:onClick="onInstagramClick"
+                        android:layout_marginEnd="16dp" />
+
+                    <ImageView
+                        android:id="@+id/youtubeLogo"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/youtube"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:onClick="onYoutubeClick"/>
+
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/footerText27"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Copack Climate, PBC © 2024"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="8dp"
+
+                    android:autoLink="web" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@android:color/darker_gray"
+                    android:layout_marginTop="8dp"/>
+                <TextView
+                    android:id="@+id/footerText28"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Contact support"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:autoLink="web" />
+                <TextView
+                    android:id="@+id/footerText29"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Privay Policy"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:layout_marginStart="16dp"
+
+                    android:autoLink="web" />
+                <TextView
+                    android:id="@+id/footerText30"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Data Collection"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginBottom="25dp"
+
+                    android:autoLink="web" />
+
+
+                <!-- Add more views as needed -->
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>
