@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".products.PetActivity">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Question Label -->
+
+        <!-- Yes/No Radio Group -->
+        <RadioGroup
+            android:id="@+id/petRadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="16dp">
+
+
+
+            <RadioButton
+                android:id="@+id/yesButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Yes"/>
+
+            <RadioButton
+                android:id="@+id/noButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="No"/>
+
+        </RadioGroup>
+
+        <!-- Pet Counts -->
+        <TextView
+            android:id="@+id/catsLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cats"
+            android:textSize="16sp"
+            android:paddingTop="8dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <Button
+                android:id="@+id/minusCatsButton"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="-"/>
+
+            <TextView
+                android:id="@+id/catsCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_marginHorizontal="16dp"
+                android:textSize="16sp"/>
+
+            <Button
+                android:id="@+id/plusCatsButton"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="+"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/dogsLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dogs"
+            android:textSize="16sp"
+            android:paddingTop="16dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <Button
+                android:id="@+id/minusDogsButton"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="-"/>
+
+            <TextView
+                android:id="@+id/dogsCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_marginHorizontal="16dp"
+                android:textSize="16sp"/>
+
+            <Button
+                android:id="@+id/plusDogsButton"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="+"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/largeDogsLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Large dogs (over 45 lbs)"
+            android:textSize="16sp"
+            android:paddingTop="16dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <Button
+                android:id="@+id/minusLargeDogsButton"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="-"/>
+
+            <TextView
+                android:id="@+id/largeDogsCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_marginHorizontal="16dp"
+                android:textSize="16sp"/>
+
+            <Button
+                android:id="@+id/plusLargeDogsButton"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="+"/>
+        </LinearLayout>
+
+
+        <!-- Action Button -->
+        <Button
+            android:id="@+id/doneButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Done"
+            android:backgroundTint="@color/green"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

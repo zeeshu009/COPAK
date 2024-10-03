@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "629118542517",
+    "project_id": "compak-d46c1",
+    "storage_bucket": "compak-d46c1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:629118542517:android:a3c06d22985cced2c814fc",
+        "android_client_info": {
+          "package_name": "com.mistercoding.compak"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCpmqE3XCpaU67_Ut8C23XlvOGdWATsOgE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

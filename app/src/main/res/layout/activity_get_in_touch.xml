@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".screens.GetInTouch">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/prefer_to_speak_with_us_n_twe_re_here_to_help"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="3dp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:gravity="center"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="7dp"
+        android:hint="@string/name"
+        android:background="@drawable/edit_text_border"
+        android:padding="16dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="7dp"
+        android:hint="@string/email"
+        android:background="@drawable/edit_text_border"
+        android:padding="16dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="7dp"
+        android:background="@drawable/edit_text_border"
+        android:padding="16dp"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_alignTop="@+id/spinner"
+            android:layout_alignBottom="@+id/spinner"
+            android:layout_alignRight="@+id/spinner"
+            android:src="@drawable/baseline_arrow_drop_down_24"
+
+            />
+    </RelativeLayout>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="7dp"
+        android:hint="@string/how_did_you_hear_about_us"
+        android:background="@drawable/edit_text_border"
+        android:padding="16dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="7dp"
+        android:hint="@string/company_name"
+        android:background="@drawable/edit_text_border"
+        android:padding="16dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="7dp"
+        android:hint="@string/number_of_employees"
+        android:background="@drawable/edit_text_border"
+        android:padding="16dp"/>
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="7dp"
+        android:text="@string/submit"
+        android:backgroundTint="@color/yellow"
+        android:gravity="center"
+        android:layout_gravity="center"/>
+
+
+</LinearLayout>

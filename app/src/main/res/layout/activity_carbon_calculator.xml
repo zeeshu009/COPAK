@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="20dp"
+    tools:context=".products.CarbonCalculator">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Carbon Footprint Calculator"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:layout_gravity="center"
+
+        android:gravity="center"/>
+    <ImageView
+        android:id="@+id/carbon_image"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/hummingbird"
+        android:layout_margin="27dp"
+        />
+
+    <TextView
+        android:id="@+id/carbon_statement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start by calculating your carbon footprint. what country do you live in?"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_marginStart="4dp"/>
+
+    <TextView
+        android:id="@+id/carbon_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Entering your country helps us begin the calculation with a baseline for every category."
+        android:textSize="22sp"
+
+        android:layout_marginStart="4dp"/>
+
+      <Button
+          android:id="@+id/carbon_answer_1"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="@string/united_states"
+          android:inputType="none"
+          android:background="@drawable/button_border"
+          android:textSize="22sp"
+          android:layout_margin="8dp"
+          android:padding="16dp"
+          android:textColor="@color/black"
+
+          />
+
+    <Button
+        android:id="@+id/carbon_answer_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="@string/united_kingdom"
+        android:inputType="none"
+        android:background="@drawable/button_border"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:layout_margin="8dp"
+        android:padding="16dp"
+
+
+
+        />
+
+    <Button
+        android:id="@+id/carbon_answer_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="@string/germany"
+
+        android:textColor="@color/black"
+        android:background="@drawable/button_border"
+        android:textSize="22sp"
+        android:layout_margin="8dp"
+        android:padding="16dp"
+
+        />
+
+    <Button
+        android:id="@+id/carbon_answer_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/enter_an_other_country"
+        android:textColor="@color/black"
+        android:background="@drawable/button_border"
+        android:textSize="22sp"
+        android:layout_margin="8dp"
+        android:padding="16dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+    <ImageView
+        android:id="@+id/carbon_back_button"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="7dp"
+        android:src="@drawable/baseline_arrow_back_24"
+        android:background="@color/green"
+        android:layout_marginStart="7dp"
+
+       />
+
+
+    <ImageView
+        android:id="@+id/carbon_next_button"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="7dp"
+
+        android:src="@drawable/baseline_arrow_forward_24"
+        android:background="@color/green"
+        android:layout_marginStart="7dp"/>
+
+    <Button
+        android:id="@+id/carbon_skip_results"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="7dp"
+        android:text="@string/skip_to_results"
+        android:textColor="@color/black"
+        android:background="@drawable/button_border"
+        android:textSize="18sp"
+        android:layout_marginTop="7dp"
+        />
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
